@@ -1,7 +1,10 @@
-﻿public interface IPizza
+﻿namespace PizzaStore
 {
-    void Prepare();
-    void Bake();
-    void Cut();
-    void Box();
+    public interface IPizza
+    {
+        void Prepare();
+        void Bake();
+        void Cut();
+        void Box();
+    }
 }

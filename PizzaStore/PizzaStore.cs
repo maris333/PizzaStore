@@ -1,21 +1,24 @@
-﻿public class PizzaStore
+﻿namespace PizzaStore
 {
-    private readonly IPizzaFactory pizzaFactory;
-
-    public PizzaStore(IPizzaFactory pizzaFactory)
+    public class PizzaStore
     {
-        this.pizzaFactory = pizzaFactory;
-    }
+        private readonly IPizzaFactory pizzaFactory;
 
-    public void OrderPizza()
-    {
-        IPizza pizza = pizzaFactory.CreatePizza();
+        public PizzaStore(IPizzaFactory pizzaFactory)
+        {
+            this.pizzaFactory = pizzaFactory;
+        }
 
-        pizza.Prepare();
-        pizza.Bake();
-        pizza.Cut();
-        pizza.Box();
+        public void OrderPizza()
+        {
+            IPizza pizza = pizzaFactory.CreatePizza();
 
-        Console.WriteLine("Pizza order complete!");
+            pizza.Prepare();
+            pizza.Bake();
+            pizza.Cut();
+            pizza.Box();
+
+            Console.WriteLine("Pizza order complete!");
+        }
     }
 }

@@ -1,22 +1,25 @@
-﻿public class MargheritaPizza : IPizza
+﻿namespace PizzaStore
 {
-    public void Prepare()
+    public class MargheritaPizza : IPizza
     {
-        Console.WriteLine("Preparing Margherita pizza");
-    }
+        public void Prepare()
+        {
+            Console.WriteLine("Preparing Margherita pizza");
+        }
 
-    public void Bake()
-    {
-        Console.WriteLine("Baking Margherita pizza");
-    }
+        public void Bake()
+        {
+            Console.WriteLine("Baking Margherita pizza");
+        }
 
-    public void Cut()
-    {
-        Console.WriteLine("Cutting Margherita pizza");
-    }
+        public void Cut()
+        {
+            Console.WriteLine("Cutting Margherita pizza");
+        }
 
-    public void Box()
-    {
-        Console.WriteLine("Boxing Margherita pizza");
+        public void Box()
+        {
+            Console.WriteLine("Boxing Margherita pizza");
+        }
     }
 }

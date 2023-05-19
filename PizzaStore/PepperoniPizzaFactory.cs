@@ -1,7 +1,10 @@
-﻿public class PepperoniPizzaFactory : IPizzaFactory
+﻿namespace PizzaStore
 {
-    public IPizza CreatePizza()
+    public class PepperoniPizzaFactory : IPizzaFactory
     {
-        return new PepperoniPizza();
+        public IPizza CreatePizza()
+        {
+            return new PepperoniPizza();
+        }
     }
 }

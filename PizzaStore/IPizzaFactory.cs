@@ -1,4 +1,7 @@
-﻿public interface IPizzaFactory
+﻿namespace PizzaStore
 {
-    IPizza CreatePizza();
+    public interface IPizzaFactory
+    {
+        IPizza CreatePizza();
+    }
 }

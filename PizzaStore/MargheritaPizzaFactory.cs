@@ -1,7 +1,10 @@
-﻿public class MargheritaPizzaFactory : IPizzaFactory
+﻿namespace PizzaStore
 {
-    public IPizza CreatePizza()
+    public class MargheritaPizzaFactory : IPizzaFactory
     {
-        return new MargheritaPizza();
+        public IPizza CreatePizza()
+        {
+            return new MargheritaPizza();
+        }
     }
 }
